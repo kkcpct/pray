@@ -12,7 +12,7 @@
 
 position: relative;
 
-padding-bottom: 177.77%; /*padding-bottom: 56.25%為影片高度與寬度的比例16:9計算得來，9除以16=0.5625換算高度比0.5625=56.25%*/
+padding-bottom: 56.25%; /*padding-bottom: 56.25%為影片高度與寬度的比例16:9計算得來，9除以16=0.5625換算高度比0.5625=56.25%*/
 
 padding-top: 30px;
 
