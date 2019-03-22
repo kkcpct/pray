@@ -11,6 +11,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript">
+			function get_date(){
+			  var today = new Date();
+			  var today_year = today.getFullYear();
+			  var today_month = today.getMonth()+1;
+			  if (today_month<10){
+			    today_month = '0' + today_month;
+			  }
+			  var today_date = today.getDate();
+			  if (today_date<10){
+			    today_date = '0' + today_date;
+			  }
+			  return today_year.toString() + today_month.toString()  + today_date.toString();
+			}
+		</script>
 	</head>
 	<body class="is-preload">
 <!-- https://coolors.co/eef0f2-16c464-9dc66b-4fa49a-4361c2 -->
@@ -23,7 +38,10 @@
 					稍後，<br>請選收訊目標，<br>按下「同意並連動」靜候 3~7秒即可。<br>
 ※ 如對象是群組，<br>請務必邀請「<a href="https://line.me/R/ti/p/@linenotify">@linenotify</a>」進入那個群組，才有效果。
 					<ul class="actions special">
-						<li><a href="https://notify-bot.line.me/oauth/authorize?response_type=code&client_id=87AQ3E0drt9209s0mYpYzl&redirect_uri=https%3A%2F%2Fscript.google.com%2Fmacros%2Fs%2FAKfycbxoTV8M7fQr5wFQiJRCEwcz5APEo0eHxBZ9UWFdkde3B9mqX6A%2Fexec&scope=notify&state=pw20190322" target="_blank" class="button scrolly"><b>訂閱 為孩子禱告</b></a></li>
+						<li>
+						<!-- <a href="https://notify-bot.line.me/oauth/authorize?response_type=code&client_id=87AQ3E0drt9209s0mYpYzl&redirect_uri=https%3A%2F%2Fscript.google.com%2Fmacros%2Fs%2FAKfycbxoTV8M7fQr5wFQiJRCEwcz5APEo0eHxBZ9UWFdkde3B9mqX6A%2Fexec&scope=notify&state=pw20190323" target="_blank" class="button scrolly"><b>訂閱 為孩子禱告</b></a> -->
+						<a href="javascript:window.open('https://notify-bot.line.me/oauth/authorize?response_type=code&client_id=87AQ3E0drt9209s0mYpYzl&redirect_uri=https%3A%2F%2Fscript.google.com%2Fmacros%2Fs%2FAKfycbxoTV8M7fQr5wFQiJRCEwcz5APEo0eHxBZ9UWFdkde3B9mqX6A%2Fexec&scope=notify&state=pw' + get_date(), '_blank');" class="button scrolly"><b>訂閱 為孩子禱告</b></a>
+						</li>
 						<!-- <li><a href="#one" class="button scrolly">Discover</a></li> -->
 					</ul>
 				</div>
