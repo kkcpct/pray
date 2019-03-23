@@ -6,6 +6,11 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+/* https://www.w3schools.com/css/css_rwd_images.asp */
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /*https://www.webdesigns.com.tw/youtube-rwd.asp*/
 /*padding-bottom: 56.25%為影片高度與寬度的比例16:9計算得來，9除以16=0.5625換算高度比0.5625=56.25%*/
